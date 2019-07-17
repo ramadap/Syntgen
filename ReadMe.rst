@@ -147,9 +147,10 @@ Sample of node distribution function
         :return: lists of total and INTRA node degrees
 
 
+Parameters for user supplied functions examples
+***********************************************
 .. parsed-literal::
 
-    Parameters for user supplied functions examples
     community_distribution samples parameters:
 	community_distribution_power_law
 	desired_number_of_nodes.........................................500
@@ -189,6 +190,5 @@ Sample of node distribution function
 	pkn (probability of inter link).................................0.002
 	fixed (or bernoulli)............................................False
 	mix_ratio (intra to total)......................................0.7
-	max_degree......................................................40
-	min_degree......................................................8
+
 
