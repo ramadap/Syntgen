@@ -5,13 +5,12 @@ Syntgen: A synthetic temporal network generator with clustering and known ground
 Description
 #############
 Please refer to "Syntgen: A system to generate temporal networks with user specified topology", submitted to IMA Journal of Complex Networks, for network generation.
-Please refer to "A Taxonomy of Community Lifecycle Events in Temporal Networks", on IEEE Xplore repository (TBD), for lifecycle event classification
+Please refer to "A Taxonomy of Community Lifecycle Events in Temporal Networks", on IEEE Xplore repository (TBD), for lifecycle event classification.
 
-This package is a Python system to generate discrete temporal networks, non weighted, non overlapped, non directional networks, that can exhibit community structure according to user specified community size and node degree sequences.
-The system generates a network according to the required sequences, linking nodes randomly, with user supplied ratio of intra-community to total degree, fixed or bernouille distributed.
-The system attempt to keep the minimum shared information distance between clusterings across successive time transitions.
-Distributions can be changed by the user at every transition, and nodes can be removed at the end of every time slice (just before transition).
-
+This package is a Python system to generate discrete temporal, non weighted, non overlapped, non directional networks, that can exhibit community structure according to user specified community size and node degree sequences.
+The system generates a network according to user specifications, linking nodes randomly, with user supplied sequences of community sizes, and bijections of nodes total and intra-community degrees. Power-law and other distribution samplers are provided as examples of sequences generators. 
+The system attempts to keep the minimum shared information distance between clusterings across successive time transitions.
+Sequences can be changed by the user at every transition, and selected nodes removed.
 
 Pre-requisites
 ==============
