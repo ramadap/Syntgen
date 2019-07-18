@@ -23,9 +23,12 @@ Possible use cases:
 Pre-requisites
 ==============
 Python v3.5+
+
 Libraries: numpy, itertools, random, bisect
-Gephi (if needed for visualization)
-Netgram and (Matlab or Octave) (if needed for visualization)
+
+Gephi https://gephi.org/ (if needed for visualization)
+
+Netgram http://www.esat.kuleuven.be/stadius/ADB/mall/downloads/Netgram_Tool.zip and (Matlab or Octave) (if needed for visualization)
 
 
 Operation
