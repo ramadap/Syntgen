@@ -9,19 +9,14 @@ of Complex Networks, for network generation.
 Please refer to "A Taxonomy of Community Lifecycle Events in Temporal Networks", on IEEE Xplore repository (TBD),
 for lifecycle event classification
 
-This package is a Python system to generate discrete temporal networks, non weighted, non overlapped, non directional
-networks, that can exhibit community structure according to user specified community size and node degree sequences.
-The system generates a network according to the required sequences, linking nodes randomly, with user supplied ratio
-of intra-community to total degree, fixed or bernoulli distributed.
-The system attempt to keep the minimum shared information distance between clusterings across successive time
-transitions.
-Distributions can be changed by the user at every transition, and nodes can be removed at the end of every time slice
-(just before transition).
+This package is a Python system to generate discrete temporal, non weighted, non overlapped, non directional networks, that can exhibit community structure. 
+The system generates a network according to user specifications, linking nodes randomly or subject to degree assortativity specifications, with user supplied sequences of community sizes, and bijections of nodes total and intra-community degrees. Power-law and other distribution samplers are provided as examples of sequences generators. The system attempts to keep the minimum shared information distance between clusterings across successive time transitions. Sequences can be changed by the user at every transition, and selected nodes removed.
 
 Possible use cases:
+===================
 
-1. Test and benchmark algorithms that operate on temporal networks, such as community detection and evolution algorithms
-2. Experimentally study correlation of network metrics
+1. Test and benchmark algorithms that operate on temporal networks, such as community detection and evolution algorithms;
+2. Experimentally study correlation of network metrics;
 3. Analyse empiric networks under varying network properties (by loading community sequences, node degrees and node
    lifecycle data from empiric temporal networks).
 
@@ -138,8 +133,8 @@ Sample of community distribution functions
     def community_distribution_power_law() -> 'list[int]':
         """ returns a community size distribution in a list
 
-        In this example a power law distribution according to default parameters is returned. User is free to code
-        it's own distribution.
+        In this example a power law distribution according to default parameters is returned. User is free to code it's own
+        distribution.
 
         :return: list of community sizes
 
@@ -202,5 +197,4 @@ Parameters for user supplied functions examples
 	pkn (probability of inter link).................................0.002
 	fixed (or bernoulli)............................................False
 	mix_ratio (intra to total)......................................0.7
-
 
