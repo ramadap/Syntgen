@@ -35,6 +35,3 @@ class Ts:
 
 Ts()
 
-import sys
-
-sys.setrecursionlimit(10000)            # needed for scanning the network for disjoint communities
