@@ -4,6 +4,7 @@ This module aggregates all objects, methods and functions related to the tempora
 It includes the logic to determine node flow between successive time intervals
 """
 
+import sys
 import itertools as it
 import numpy as np
 from constants import *
