@@ -4,10 +4,11 @@ Syntgen: A synthetic temporal network generator with clustering and known ground
 
 Description
 #############
-Please refer to "Syntgen: A system to generate temporal networks with user specified topology", submitted to IMA Journal
-of Complex Networks, for network generation.
+Please refer to "Syntgen: A system to generate temporal networks with user specified topology", published in the IMA Journal
+of Complex Networks, https://doi.org/10.1093/comnet/cnz039 for network generation.
+
 Please refer to "A Taxonomy of Community Lifecycle Events in Temporal Networks", on IEEE Xplore repository (TBD),
-for lifecycle event classification
+for lifecycle event classification.
 
 This package is a Python system to generate discrete temporal, non weighted, non overlapped, non directional networks, that can exhibit community structure. 
 The system generates a network according to user specifications, linking nodes randomly or subject to degree assortativity specifications, with user supplied sequences of community sizes, and bijections of nodes total and intra-community degrees. Power-law and other distribution samplers are provided as examples of sequences generators. The system attempts to keep the minimum shared information distance between clusterings across successive time transitions. Sequences can be changed by the user at every transition, and selected nodes removed.
